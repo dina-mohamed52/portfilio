@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  background-color: rgb(22, 22, 22);
+}
+.text-color{
+
+  color: rgb(12, 236, 236);
+}
+.bg{
+  background-color: rgba(4, 49, 49, 0.9);
+}
+
+.shadow{
+  box-shadow: 0 0 20px rgb(12, 236, 236);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+     opacity: 1;
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+     opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+     opacity: 1;
+  }
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.trans {
+  animation: slideBottom 1.9s ease forwards;
+
+}
+.transB {
+  animation: slideTop 1.9s ease forwards;
+
+}
+.transL {
+  animation: slideRight 1.5s ease forwards;
+
+}
+.transR {
+  animation: slideLeft 1.5s ease forwards;
+
+}
+

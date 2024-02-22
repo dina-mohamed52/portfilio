@@ -1,0 +1,35 @@
+<div class="h-[41rem] flex gap-20" #animatedElement >
+  <div class="mt-[8rem] ml-[8rem]" data-animation="transL" >
+    <img
+      src="../../assets/img.jpeg"
+      alt="Your Image"
+      class="w-[24rem] h-[27rem] rounded-full shadow-lg"
+    />
+  </div>
+  <section  data-animation="transB" class="  w-[42rem] capitalize text-lg text-gray-300 " >
+    <h2 data-animation="trans" class=" text-gray-200 ml-[-0.5rem] mt-[8rem]  rounded-full p-2 w-[8rem] text-color ">about <span class="text-color" >me</span> </h2>
+    <p class=" text-lg leading-loose">
+      I'm a passionate <span class="text-color" >Frontend developer</span>  specializing in ReactJS and Angular. With a
+      Bachelor's in Computer Engineering, I excel in creating visually stunning
+      interfaces and implementing robust authentication and authorization
+      systems.
+    </p>
+    <p *ngIf="showFullText" class="text-lg leading-loose">
+      I have hands-on experience with technologies like React Query and Ngrx. My
+      projects include the Recipe Book (Angular) and The-Wild-Oasis (React JS),
+      showcasing my skills in Firebase integration and optimized data fetching.
+      Certified in Angular - The Complete Guide, I'm dedicated to continuous
+      learning. I thrive in collaborative environments and am eager to
+      contribute my creativity and technical expertise to dynamic projects.
+    </p>
+     <div>
+    <button
+
+      (click)="showFullText=!showFullText"
+      class="ml-[0rem] mt-[1rem] font-semibold px-6 capitalize text-stone-200 hover:bg-teal-300 hover:text-stone-100 rounded-xl p-2 bg-teal-400"
+    >
+      {{ showFullText? 'show less' :'learn more'}}
+    </button>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,95 @@
+
+ img {
+  object-fit: cover;/* Make the image circular */
+  box-shadow: 0 0 10px rgb(12, 236, 236); /* Apply shadow with the specified color */
+}
+.gradient-text {
+  background: linear-gradient(to right, rgb(12, 236, 236), white);
+  -webkit-background-clip: text; /* Safari 4-5, Chrome 1-9 */
+  -moz-background-clip: text; /* Firefox 3.6-15 */
+  -ms-background-clip: text; /* Internet Explorer 6-9 */
+  -o-background-clip: text; /* Opera 10.0-11.1 */
+  background-clip: text; /* Standard syntax */
+  color: transparent; /* Hide the text content */
+}
+/* @keyframes slideInRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+} */
+
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+     opacity: 1;
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+     opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+     opacity: 1;
+  }
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.trans {
+  animation: slideBottom 1.5s ease forwards;
+
+}
+.transL {
+  animation: slideRight 1.5s ease forwards;
+
+}
+.transR {
+  animation: slideLeft 1.5s ease forwards;
+
+}
