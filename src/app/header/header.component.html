@@ -1,31 +1,33 @@
-<div class="h-[41rem]">
+<div class="md:h-[41rem]">
   <app-nav-bar />
   <div class="flex flex-col items-center justify-between">
-    <div class=" mt-[4rem] ml-[50rem]">
+    <div class="md:mt-[4rem] md:ml-[50rem]">
       <img
         src="../../assets/img.jpeg"
         alt="Your Image"
         class="w-[24rem] h-[27rem] rounded-full shadow-lg"
       />
     </div>
-    <section class="mt-[-24rem] ml-[-35rem]">
+    <section class=" sm:ml-[14rem] md:mt-[-24rem] md:ml-[-35rem] lg:mr-[8rem] lg:text-left md:text-center">
       <h4
-   data-animation="trans"
-        class=" text-stone-300 font-medium text-lg capitalize leading-relaxed ml-1"
+        data-animation="trans"
+        class="lg:ml-[6.2rem] text-stone-300  font-medium text-lg capitalize leading-relaxed ml-1"
       >
         hello i'm
       </h4>
-      <h2 data-animation="transL"  class=" text-5xl font-semibold gradient-text">
+      <h2
+        data-animation="transL"
+        class="  lg:ml-[6rem]  text-5xl font-semibold gradient-text"
+      >
         Dina Mohamed
       </h2>
-      <!-- <br/> -->
       <div
-data-animation="trans"
-        class=" text-4xl  font-semibold gradient-text leading-loose"
+        data-animation="trans"
+        class="lg:ml-[6rem]  text-4xl font-semibold gradient-text leading-loose"
       >
         <span class="text-stone-300 font-medium text-4xl capitalize">and i'm</span>
-        {{ ""
-        }}<span
+        {{ "" }}
+        <span
           appTypedDynamic
           [typedstring]="['Frontend Developer']"
           [options]="{
@@ -38,21 +40,23 @@ data-animation="trans"
           Frontend Devoloper</span
         >
       </div>
-      <pre data-animation="transR" class=" leading-loose text-stone-300 font-medium text-lg capitalize">
+      <pre
+        data-animation="transR"
+        class="lg:ml-[6rem] leading-loose text-stone-300 font-medium text-lg capitalize"
+      >
 i'm ReactJS specialist crafting visually stunning interfaces.
 Experienced in authentication, authorization, and sleek dashboards,
 eager to contribute to dynamic projects</pre
       >
     </section>
   </div>
-  <div>
-    <div class="mr-[64rem] mt-[2rem]" >
+  <div class="sm:mt-[2rem] text-center">
+    <div class="md:mr-[64rem]">
       <app-contact-icon></app-contact-icon>
     </div>
     <button
-
       (click)="downloadcv($event)"
-      class=" mt-6 ml-[4rem] font-semibold px-6 capitalize text-stone-200 hover:bg-teal-300 hover:text-stone-100 rounded-xl p-2 bg-teal-400"
+      class="mt-6 lg:ml-[-67rem]  md:ml-[4rem] font-semibold px-6 capitalize text-stone-200 hover:bg-teal-300 hover:text-stone-100 rounded-xl p-2 bg-teal-400"
     >
       download cv
     </button>

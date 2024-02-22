@@ -1,22 +1,22 @@
-<nav #nav class="text-gray-200 capitalize flex justify-center items-center font-medium ">
-  <!-- <span class="ml-[4rem] text-lg" >Dina</span> -->
-  <ul class="flex gap-10">
-    <li (click)="goHome()" class="text-color text-lg hover:scale-105 cursor-pointer hover:text-white rounded-full px-4 py-2">
+<nav #nav class="text-gray-200 capitalize flex justify-center items-center font-medium">
+  <!-- <span class="ml-[4rem] text-lg">Dina</span> -->
+  <ul class="flex gap-4 md:gap-10">
+    <li (click)="goHome()" class="text-color text-lg hover:scale-105 cursor-pointer hover:text-white rounded-full px-2 md:px-4 py-1 md:py-2">
       <a routerLink="/home" routerLinkActive="active">home</a>
     </li>
-    <li (click)="goAbout()" class="text-color text-lg hover:scale-105 cursor-pointer hover:text-white rounded-full px-4 py-2">
+    <li (click)="goAbout()" class="text-color text-lg hover:scale-105 cursor-pointer hover:text-white rounded-full px-2 md:px-4 py-1 md:py-2">
       <a routerLink="/about" routerLinkActive="active">about</a>
     </li>
-    <li (click)="goServices()" class="text-color text-lg hover:scale-105 cursor-pointer hover:text-white rounded-full px-4 py-2">
+    <li (click)="goServices()" class="text-color text-lg hover:scale-105 cursor-pointer hover:text-white rounded-full px-2 md:px-4 py-1 md:py-2">
       <a routerLink="/services" routerLinkActive="active">services</a>
     </li>
-    <li (click)="goSkills()" class="text-color text-lg hover:scale-105 cursor-pointer hover:text-white rounded-full px-4 py-2">
+    <li (click)="goSkills()" class="text-color text-lg hover:scale-105 cursor-pointer hover:text-white rounded-full px-2 md:px-4 py-1 md:py-2">
       <a routerLink="/skills" routerLinkActive="active">skills</a>
     </li>
-    <li (click)="goProjects()" class="text-color text-lg hover:scale-105 cursor-pointer hover:text-white rounded-full px-4 py-2">
+    <li (click)="goProjects()" class="text-color text-lg hover:scale-105 cursor-pointer hover:text-white rounded-full px-2 md:px-4 py-1 md:py-2">
       <a routerLink="/projects" routerLinkActive="active">projects</a>
     </li>
-    <!-- <li class="text-color text-lg cursor-pointer hover:scale-105 hover:text-white rounded-full px-4 py-2">
+    <!-- <li class="text-color text-lg cursor-pointer hover:scale-105 hover:text-white rounded-full px-2 md:px-4 py-1 md:py-2">
       <a (click)="goContact()" routerLink="/contact">contact</a>
     </li> -->
   </ul>

@@ -1,13 +1,7 @@
 import { TypedDynamicDirective } from './../features/typed-dynamic.directive';
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-} from '@angular/animations';
+// import { MediaMatcher } from '@angular/cdk/layout';
 import { NavigationEnd, Router } from '@angular/router';
 import { ContactIconComponent } from './contact-icon/contact-icon.component';
 
@@ -15,7 +9,7 @@ import { ContactIconComponent } from './contact-icon/contact-icon.component';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NavBarComponent, TypedDynamicDirective,ContactIconComponent],
+  imports: [NavBarComponent, TypedDynamicDirective, ContactIconComponent],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
 })
@@ -30,8 +24,13 @@ export class HeaderComponent {
     link.click();
   }
   @ViewChild('animatedElement') animatedElement!: ElementRef;
+  // mobileQuery: MediaQueryList;
 
-  constructor(private router: Router) {}
+
+  constructor(private router: Router) {
+
+    // this.mobileQuery = mediaMatcher.matchMedia('(max-width: 768px)');
+  }
 
   ngOnInit() {
     this.router.events.subscribe((event) => {
